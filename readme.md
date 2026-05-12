@@ -1,38 +1,60 @@
-# Installation
-Run the following command to clone the repository
-```
-git clone https://github.com/alokyadav1/mern-todo-app.git
-```
-Go to ```frontend``` and ```backend``` directory to install packages
-```
-cd frontend
-npm install
-```
-```
-cd backend
-npm install
-```
-# Configuration
-Create ```.env``` file inside ```backend``` directory and copy the following code
+# TO DO App – MERN Task Management Web Application
 
-```
-MONGO_URI=Your mongodb URI
-GMAIL_USERNAME=your gmail address 
-GMAIL_PASSWORD=password created inside 'App Password' section under google accounts setting
-PORT=8000
-JWT_SECRET=a random secret key eg. thisisasecretkey
-```
-# Run the App
-Go to ```backend``` and ```frontend``` directory and start the server
-```
-cd backend
-nodemon server
-```
-```
-cd frontend
-npm start
-```
-# Live Preview
-Check live preview here [https://todo-app-b96a5.web.app/](https://todo-app-b96a5.web.app/)
+TO DO App is a full-stack MERN task management web application developed and customized by **Yalamanchili Meghana**.  
+The application helps users manage daily tasks efficiently with secure authentication, task organization, and persistent cloud-based storage.
 
+---
 
+## Features
+
+- Secure User Authentication (Login & Register)
+- Create, Read, Update, and Delete Tasks
+- Mark Tasks as Completed
+- Persistent Data Storage using MongoDB Atlas
+- Responsive and User-Friendly Interface
+- JWT-Based Authentication System
+- Organized Task Dashboard
+- Modern UI Design with Interactive Components
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB Atlas
+
+### Authentication
+
+- JWT (JSON Web Token)
+
+---
+
+## Project Structure
+
+```text
+To-Do-list-App/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│
+├── README.md
