@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useContext } from 'react';
 import { Navigate } from 'react-router-dom';
-import axios from "../Axios/axios.js"
+import instance from "../Axios/axios";
 import TokenContext from '../context/TokenContext.js';
 function Register() {
     const [formData, setFormData] = useState({})
@@ -14,7 +14,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const result = await axios.post("/user/register", formData)
+            const result = await instance.post("/user/register", formData)
             tokenDispatch({ type: "SET_TOKEN", payload: result.data.token })
             userDispatch({ type: "SET_USER", payload: result.data.user })
             localStorage.setItem("authToken", JSON.stringify(result.data.token))
