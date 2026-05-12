@@ -7,17 +7,18 @@ import userRouter from "./routes/userRoute.js"
 import taskRouter from "./routes/taskRoute.js"
 import forgotPasswordRouter from "./routes/forgotPassword.js"
 
-//app config
+// app config
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 8001
+
 mongoose.set('strictQuery', true);
 
-//middlewares
+// middlewares
 app.use(express.json())
 app.use(cors())
 
-//db config
+// db config
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
 }, (err) => {
@@ -28,10 +29,10 @@ mongoose.connect(process.env.MONGO_URI, {
     }
 })
 
-//api endpoints
+// api endpoints
 app.use("/api/user", userRouter)
 app.use("/api/task", taskRouter)
 app.use("/api/forgotPassword", forgotPasswordRouter)
 
-//listen
+// listen
 app.listen(port, () => console.log(`Listening on localhost:${port}`))
