@@ -1,6 +1,6 @@
-# TO DO App – MERN Task Management Web Application
+# Taskflow App – MERN Task Management Web Application
 
-TO DO App is a full-stack MERN task management web application developed and customized by **Yalamanchili Meghana**.  
+Taskflow App is a full-stack MERN task management web application developed and customized by **Yalamanchili Meghana**.  
 The application helps users manage daily tasks efficiently with secure authentication, task organization, and persistent cloud-based storage.
 
 ---
